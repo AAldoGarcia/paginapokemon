@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex - Buscar por Tipo</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body class="home-page">
+    <!-- Navbar -->
+    <nav class="navbar home-page">
+        <a href="#" class="logo">Pokédex</a>
+        <div class="nav-links">
+            <a href="#" id="home-link">Inicio</a>
+            <a href="#">Tipos</a>
+            <a href="#">Pokémon</a>
+            <a href="#">Acerca de</a>
+        </div>
+    </nav>
+    
+    <!-- Home Page -->
+    <div class="main-content" id="home-page">
+        <section class="hero">
+            <h1>Explora Pokémon por Tipo</h1>
+            <p>Selecciona un tipo de Pokémon para ver todos los Pokémon de esa categoría</p>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <select id="type-select" class="type-select">
+                        <option value="">Selecciona un tipo...</option>
+                        <option value="normal">Normal</option>
+                        <option value="fire">Fuego</option>
+                        <option value="water">Agua</option>
+                        <option value="electric">Eléctrico</option>
+                        <option value="grass">Planta</option>
+                        <option value="ice">Hielo</option>
+                        <option value="fighting">Lucha</option>
+                        <option value="poison">Veneno</option>
+                        <option value="ground">Tierra</option>
+                        <option value="flying">Volador</option>
+                        <option value="psychic">Psíquico</option>
+                        <option value="bug">Bicho</option>
+                        <option value="rock">Roca</option>
+                        <option value="ghost">Fantasma</option>
+                        <option value="dragon">Dragón</option>
+                        <option value="dark">Siniestro</option>
+                        <option value="steel">Acero</option>
+                        <option value="fairy">Hada</option>
+                    </select>
+                    <button id="search-btn" class="search-btn">Buscar</button>
+                </div>
+            </div>
+        </section>
+        
+        <h2>Tipos de Pokémon</h2>
+        <div class="type-grid">
+            <div class="type-card normal" data-type="normal">Normal</div>
+            <div class="type-card fire" data-type="fire">Fuego</div>
+            <div class="type-card water" data-type="water">Agua</div>
+            <div class="type-card electric" data-type="electric">Eléctrico</div>
+            <div class="type-card grass" data-type="grass">Planta</div>
+            <div class="type-card ice" data-type="ice">Hielo</div>
+            <div class="type-card fighting" data-type="fighting">Lucha</div>
+            <div class="type-card poison" data-type="poison">Veneno</div>
+            <div class="type-card ground" data-type="ground">Tierra</div>
+            <div class="type-card flying" data-type="flying">Volador</div>
+            <div class="type-card psychic" data-type="psychic">Psíquico</div>
+            <div class="type-card bug" data-type="bug">Bicho</div>
+            <div class="type-card rock" data-type="rock">Roca</div>
+            <div class="type-card ghost" data-type="ghost">Fantasma</div>
+            <div class="type-card dragon" data-type="dragon">Dragón</div>
+            <div class="type-card dark" data-type="dark">Siniestro</div>
+            <div class="type-card steel" data-type="steel">Acero</div>
+            <div class="type-card fairy" data-type="fairy">Hada</div>
+        </div>
+    </div>
+    
+    <!-- Results Page -->
+    <div class="main-content" id="results-page">
+        <a href="#" class="back-btn" id="back-btn">← Volver a Inicio</a>
+        <h1 id="results-title">Pokémon de Tipo <span id="type-name"></span></h1>
+        <div id="pokemon-container" class="pokemon-grid">
+            <div class="loading">Cargando Pokémon...</div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="home-page">
+        <p>© 2023 Pokédex | Datos proporcionados por PokeAPI.co</p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
